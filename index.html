@@ -264,6 +264,24 @@
       <!-- Flow Diagram -->
       <div class="flow-diagram" id="flowDiagram" aria-label="Energy flow diagram">
 
+        <!-- Full-diagram SVG overlay for flow lines -->
+        <svg class="flow-svg" id="flowSVG" aria-hidden="true">
+          <defs>
+            <marker id="arrowBlue" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+              <path d="M0,0 L0,6 L9,3 z" fill="#2563EB"/>
+            </marker>
+            <marker id="arrowGreen" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+              <path d="M0,0 L0,6 L9,3 z" fill="#10B981"/>
+            </marker>
+            <marker id="arrowAmber" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+              <path d="M0,0 L0,6 L9,3 z" fill="#F59E0B"/>
+            </marker>
+            <marker id="arrowRed" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+              <path d="M0,0 L0,6 L9,3 z" fill="#EF4444"/>
+            </marker>
+          </defs>
+        </svg>
+
         <!-- Sources (left) -->
         <div class="flow-sources">
           <div class="flow-node source-node" id="fnSolar">
@@ -294,22 +312,6 @@
 
         <!-- Center Bus -->
         <div class="flow-bus-wrap">
-          <svg class="flow-svg" id="flowSVG" aria-hidden="true" width="100%" height="100%">
-            <defs>
-              <marker id="arrowBlue" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
-                <path d="M0,0 L0,6 L9,3 z" fill="#2563EB"/>
-              </marker>
-              <marker id="arrowGreen" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
-                <path d="M0,0 L0,6 L9,3 z" fill="#10B981"/>
-              </marker>
-              <marker id="arrowAmber" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
-                <path d="M0,0 L0,6 L9,3 z" fill="#F59E0B"/>
-              </marker>
-              <marker id="arrowRed" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
-                <path d="M0,0 L0,6 L9,3 z" fill="#EF4444"/>
-              </marker>
-            </defs>
-          </svg>
           <div class="bus-hub">
             <div class="bus-hub-inner">
               <div class="bus-label">Distribution</div>
